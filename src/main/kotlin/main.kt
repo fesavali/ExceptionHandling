@@ -1,7 +1,8 @@
 import kotlinx.coroutines.*
 import java.security.InvalidParameterException
-
+//my code is fire
 fun main(args: Array<String>) {
+    //never use run blocking
     runBlocking {
         val scope = CoroutineScope(Dispatchers.Default)
         val deferred = scope.async {
